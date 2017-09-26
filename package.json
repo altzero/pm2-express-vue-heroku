@@ -5,7 +5,7 @@
   "author": "Henrik Fogelberg <henrik.fogelberg@gmail.com>",
   "private": true,
   "scripts": {
-    "preinstall": "npm install pm2 -g",
+    "preinstall": "npm install cross-env pm2 -g",
     "start": "npm run server | npm run vue",
     "dev": "npm run server | npm run vue",
     "vue": "cross-env NODE_ENV=development pm2 start webpack-dev-server  --name vue -- --open --hot",
